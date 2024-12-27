@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#metro-line {
+    position: relative;
+    width: 80%;
+}
+
+#line {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    background-color: #007acc;
+    z-index: 1;
+    border-radius: 150px;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#stations {
+    position: relative;
+    top: -2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.station {
+    /* 定位 */
+    position: relative;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    z-index: 2;
+
+    /* 边框 */
+    border-radius: 50%;
+    border: 2px solid #007acc;
+
+    /* 背景 */
+    background-color: #fff;
+    
+    /* 动画 */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.station-name {
+    /* 定位 */
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+
+    /* 大小 */
+    font-size: 14px;
+
+    /* 颜色 */
+    color: #333;
+
+    text-align: center;
+}
+
+.station-english-name {
+    /* 定位 */
+    position: absolute;
+    width: 200px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* 大小 */
+    font-size: 12px;
+
+    /* 颜色 */
+    color: #333;
+
+    text-align: center;
+}
+
+.arrow {
+    /* 定位 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    /* 大小 */
+    font-size: 20px;
+
+    /* 默认颜色 */
+    color: #007acc;    
+
+    /* 动画 */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.arrow.left {
+    left: -25px;
+}
+
+.arrow.right {
+    right: -25px;
+}
