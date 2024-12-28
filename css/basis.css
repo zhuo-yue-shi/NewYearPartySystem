@@ -1,5 +1,12 @@
 /* 开屏界面元素 */
 #splash-screen {
+    /* 定位 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    margin: 0;
+
     /* 居中 */
     text-align: center;
 
@@ -10,6 +17,9 @@
     /* 宽高 */
     width: 100%;
     height: 100vh;
+
+    /* 盖子 */
+    background-color: white;
 
     /* 动画 */
     transition: opacity 0.5s ease-in-out;
@@ -51,4 +61,66 @@
     /* 长宽 */
     height: 200px;
     width: auto;
+}
+
+#main-screen {
+    /* 定位 */
+    width: 100%;
+    height: 96vh;
+
+    /* Flex 容器设置 */
+    display: flex;
+    flex-direction: column;
+}
+
+#cards {
+    /* 定位 */
+    display: flex;
+    justify-content: center;
+}
+
+.role {
+    background-color: #eee;
+
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.roleJob {
+    /* 定位 */
+    display: inline-block;
+
+    /* 颜色 */
+    color: #07fba5;
+    font-weight: bold;
+}
+
+.roleName {
+    /* 定位 */
+    display: inline-block;
+}
+
+.play{
+    height: 80%;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 5px;
+}
+
+#roles-card {
+    height: 95%;
+    min-width: 250px;
+    flex-shrink: 0;
+}
+
+#player {
+    background-color: black;
+
+    flex-grow: 1;
+
+    width: 100%;
+    height: 100%;
 }

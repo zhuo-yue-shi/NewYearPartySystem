@@ -217,4 +217,9 @@ document.addEventListener('DOMContentLoaded', () => {
         setArrow(0, 2, "red");
         setStation(1, "red");
     }, 3000);
+    setTimeout(() => {
+        addStation('节目4', 'Show4', 'green', 3);
+        addArrow(2, 2, "green");
+        addArrow(3, 1, "grey");
+    }, 4000);
 });

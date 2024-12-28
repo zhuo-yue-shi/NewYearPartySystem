@@ -1,0 +1,33 @@
+/* 基础样式 */
+.card {
+    /* 背景颜色 */
+    background-color: #f9f9f9;
+
+    /* 边框 */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    /* 阴影 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    /* 定位 */
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.card .lable {
+    font-size: 16px;
+    color: #07fba5;
+
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card .value {
+    font-size: 18px;
+    color: #333;
+}

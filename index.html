@@ -9,6 +9,8 @@
 
         <!-- CSS 样式-->
         <link rel="stylesheet" href="css/basis.css">
+        <link rel="stylesheet" href="css/tubeMap.css">
+        <link rel="stylesheet" href="css/card.css">
 
         <!-- JS 脚本 -->
         <script src="js/index.js"></script>
@@ -19,6 +21,53 @@
                 <img src="/resource/icon.png" alt="元具" class="big-icon">
                 <h1 id="splash-screen-title">元旦联欢系统</h1>
                 <p id="splash-screen-tip">正在加载...</p>
+            </div>
+        </div>
+        <div id="main-screen">
+            <div id="metro-map">
+                <div id="metro-line">
+                    <div id="line"></div>
+                    <div id="stations"></div>
+                </div>
+            </div>
+            <div id="cards">
+                <div class="card">
+                    <div class="lable">
+                        状态
+                    </div>
+                    <div class="value" id="status">
+                        即将开始
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lable">
+                        下个节目
+                    </div>
+                    <div class="value" id="nextShow">
+                        加载中...
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="lable">
+                        当前节目
+                    </div>
+                    <div class="value" id="nowShow">
+                        加载中...
+                    </div>
+                </div>
+            </div>
+            <div class="play">
+                <div class="card" id="roles-card">
+                    <div class="lable">
+                        演员列表
+                    </div>
+                    <div class="value" id="roles">
+                        
+                    </div>
+                </div>
+                <video id="player">
+
+                </video>
             </div>
         </div>
     </body>
